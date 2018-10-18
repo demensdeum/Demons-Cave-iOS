@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840F5BA81C93FCF400F3F639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F5BA71C93FCF400F3F639 /* AppDelegate.swift */; };
+		840F5BAA1C93FE7E00F3F639 /* DCGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840F5BA91C93FE7E00F3F639 /* DCGameViewController.swift */; };
+		840F5BAE1C9405EE00F3F639 /* FullScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840F5BAD1C9405EE00F3F639 /* FullScreen.xcassets */; };
+		842B11221C94088900897202 /* DCFadeImagePresenterLogoScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11211C94088900897202 /* DCFadeImagePresenterLogoScene.swift */; };
+		842B11261C94148300897202 /* DCPlayGameInstructionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11251C94148300897202 /* DCPlayGameInstructionsScene.swift */; };
+		842B11281C942E7D00897202 /* DCSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11271C942E7D00897202 /* DCSceneDelegate.swift */; };
+		842B112A1C94340200897202 /* DCScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11291C94340200897202 /* DCScene.swift */; };
+		842B112C1C943E5E00897202 /* DCInGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B112B1C943E5E00897202 /* DCInGameScene.swift */; };
+		842B112E1C9445C300897202 /* DCGameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B112D1C9445C300897202 /* DCGameOverScene.swift */; };
+		842B11311C94478F00897202 /* DCObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11301C94478F00897202 /* DCObject.swift */; };
+		842B11331C9447A400897202 /* DCCaveBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11321C9447A400897202 /* DCCaveBackground.swift */; };
+		842B11351C9447C400897202 /* DCPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11341C9447C400897202 /* DCPipe.swift */; };
+		842B11371C9447E900897202 /* DCCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11361C9447E900897202 /* DCCoin.swift */; };
+		842B11391C9447F700897202 /* DCWerj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B11381C9447F700897202 /* DCWerj.swift */; };
+		842B113B1C9447FF00897202 /* DCEnemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B113A1C9447FF00897202 /* DCEnemy.swift */; };
+		842B113D1C944A7B00897202 /* InGame.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842B113C1C944A7B00897202 /* InGame.xcassets */; };
+		8473C8371C9D7743005F72E7 /* DCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C8361C9D7743005F72E7 /* DCUtils.swift */; };
+		8473C85A1C9DBF67005F72E7 /* ChelseaMarket-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8473C83A1C9DBF67005F72E7 /* ChelseaMarket-Regular.ttf */; };
+		8473C85B1C9DBF67005F72E7 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8473C83B1C9DBF67005F72E7 /* OFL.txt */; };
+		8473C85C1C9DBF67005F72E7 /* ScizzorwreckHalbfett.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8473C83C1C9DBF67005F72E7 /* ScizzorwreckHalbfett.otf */; };
+		8473C85D1C9DBF67005F72E7 /* bensound-dance.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C83E1C9DBF67005F72E7 /* bensound-dance.m4a */; };
+		8473C85F1C9DBF67005F72E7 /* bensound-dubstep.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8401C9DBF67005F72E7 /* bensound-dubstep.m4a */; };
+		8473C8611C9DBF67005F72E7 /* bensound-funkyelement.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8421C9DBF67005F72E7 /* bensound-funkyelement.m4a */; };
+		8473C8631C9DBF67005F72E7 /* bensound-moose.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8441C9DBF67005F72E7 /* bensound-moose.m4a */; };
+		8473C8651C9DBF67005F72E7 /* bensound-popdance.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8461C9DBF67005F72E7 /* bensound-popdance.m4a */; };
+		8473C86B1C9DBF67005F72E7 /* michett-bitch-please.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C84C1C9DBF67005F72E7 /* michett-bitch-please.m4a */; };
+		8473C86D1C9DBF67005F72E7 /* michett-planes.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C84E1C9DBF67005F72E7 /* michett-planes.m4a */; };
+		8473C8731C9DBF67005F72E7 /* coin.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8551C9DBF67005F72E7 /* coin.m4a */; };
+		8473C8751C9DBF67005F72E7 /* explosion.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8571C9DBF67005F72E7 /* explosion.m4a */; };
+		8473C8771C9DBF67005F72E7 /* speedUp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8473C8591C9DBF67005F72E7 /* speedUp.m4a */; };
+		8473C87B1C9EEF42005F72E7 /* DCExplosion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C87A1C9EEF42005F72E7 /* DCExplosion.swift */; };
+		8473C87D1C9EEF7A005F72E7 /* DCExplosionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C87C1C9EEF7A005F72E7 /* DCExplosionDelegate.swift */; };
+		8473C87F1CA05739005F72E7 /* DCSpeedBarEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C87E1CA05739005F72E7 /* DCSpeedBarEmpty.swift */; };
+		8473C8811CA0678F005F72E7 /* DCSpeedBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C8801CA0678F005F72E7 /* DCSpeedBar.swift */; };
+		8473C8841CA1C298005F72E7 /* DCGameScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C8831CA1C298005F72E7 /* DCGameScoreController.swift */; };
+		8473C8861CA1CCFA005F72E7 /* DCGameScoreControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C8851CA1CCFA005F72E7 /* DCGameScoreControllerDelegate.swift */; };
+		8473C8881CA31717005F72E7 /* DCSoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8473C8871CA31717005F72E7 /* DCSoundController.swift */; };
+		8481C7531C93D3FB00E4CE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481C7511C93D3FB00E4CE24 /* Main.storyboard */; };
+		8481C7551C93D3FB00E4CE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8481C7541C93D3FB00E4CE24 /* Assets.xcassets */; };
+		8481C7581C93D3FB00E4CE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481C7561C93D3FB00E4CE24 /* LaunchScreen.storyboard */; };
+		A4666B349D1A2211205F0893 /* Pods_DemonsCave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087FF08B40A00CB3C7D4D6CB /* Pods_DemonsCave.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		087FF08B40A00CB3C7D4D6CB /* Pods_DemonsCave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemonsCave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CDB939F9912497460D63484 /* Pods-DemonsCave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemonsCave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemonsCave/Pods-DemonsCave.debug.xcconfig"; sourceTree = "<group>"; };
+		2FFD2651F2EAD0A86483F404 /* Pods-DemonsCave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemonsCave.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemonsCave/Pods-DemonsCave.release.xcconfig"; sourceTree = "<group>"; };
+		840F5BA71C93FCF400F3F639 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = src/AppDelegate.swift; sourceTree = "<group>"; };
+		840F5BA91C93FE7E00F3F639 /* DCGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DCGameViewController.swift; path = src/DCGameViewController.swift; sourceTree = "<group>"; };
+		840F5BAD1C9405EE00F3F639 /* FullScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FullScreen.xcassets; sourceTree = "<group>"; };
+		842B11211C94088900897202 /* DCFadeImagePresenterLogoScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DCFadeImagePresenterLogoScene.swift; path = src/DCFadeImagePresenterLogoScene.swift; sourceTree = "<group>"; };
+		842B11251C94148300897202 /* DCPlayGameInstructionsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCPlayGameInstructionsScene.swift; sourceTree = "<group>"; };
+		842B11271C942E7D00897202 /* DCSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCSceneDelegate.swift; sourceTree = "<group>"; };
+		842B11291C94340200897202 /* DCScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCScene.swift; sourceTree = "<group>"; };
+		842B112B1C943E5E00897202 /* DCInGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCInGameScene.swift; sourceTree = "<group>"; };
+		842B112D1C9445C300897202 /* DCGameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCGameOverScene.swift; sourceTree = "<group>"; };
+		842B11301C94478F00897202 /* DCObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCObject.swift; sourceTree = "<group>"; };
+		842B11321C9447A400897202 /* DCCaveBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCaveBackground.swift; sourceTree = "<group>"; };
+		842B11341C9447C400897202 /* DCPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCPipe.swift; sourceTree = "<group>"; };
+		842B11361C9447E900897202 /* DCCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCoin.swift; sourceTree = "<group>"; };
+		842B11381C9447F700897202 /* DCWerj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCWerj.swift; sourceTree = "<group>"; };
+		842B113A1C9447FF00897202 /* DCEnemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCEnemy.swift; sourceTree = "<group>"; };
+		842B113C1C944A7B00897202 /* InGame.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InGame.xcassets; sourceTree = "<group>"; };
+		8473C8361C9D7743005F72E7 /* DCUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCUtils.swift; sourceTree = "<group>"; };
+		8473C83A1C9DBF67005F72E7 /* ChelseaMarket-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ChelseaMarket-Regular.ttf"; sourceTree = "<group>"; };
+		8473C83B1C9DBF67005F72E7 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		8473C83C1C9DBF67005F72E7 /* ScizzorwreckHalbfett.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ScizzorwreckHalbfett.otf; sourceTree = "<group>"; };
+		8473C83E1C9DBF67005F72E7 /* bensound-dance.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bensound-dance.m4a"; sourceTree = "<group>"; };
+		8473C8401C9DBF67005F72E7 /* bensound-dubstep.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bensound-dubstep.m4a"; sourceTree = "<group>"; };
+		8473C8421C9DBF67005F72E7 /* bensound-funkyelement.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bensound-funkyelement.m4a"; sourceTree = "<group>"; };
+		8473C8441C9DBF67005F72E7 /* bensound-moose.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bensound-moose.m4a"; sourceTree = "<group>"; };
+		8473C8461C9DBF67005F72E7 /* bensound-popdance.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bensound-popdance.m4a"; sourceTree = "<group>"; };
+		8473C84C1C9DBF67005F72E7 /* michett-bitch-please.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "michett-bitch-please.m4a"; sourceTree = "<group>"; };
+		8473C84E1C9DBF67005F72E7 /* michett-planes.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "michett-planes.m4a"; sourceTree = "<group>"; };
+		8473C8551C9DBF67005F72E7 /* coin.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = coin.m4a; sourceTree = "<group>"; };
+		8473C8571C9DBF67005F72E7 /* explosion.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = explosion.m4a; sourceTree = "<group>"; };
+		8473C8591C9DBF67005F72E7 /* speedUp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = speedUp.m4a; sourceTree = "<group>"; };
+		8473C87A1C9EEF42005F72E7 /* DCExplosion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCExplosion.swift; sourceTree = "<group>"; };
+		8473C87C1C9EEF7A005F72E7 /* DCExplosionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCExplosionDelegate.swift; sourceTree = "<group>"; };
+		8473C87E1CA05739005F72E7 /* DCSpeedBarEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCSpeedBarEmpty.swift; sourceTree = "<group>"; };
+		8473C8801CA0678F005F72E7 /* DCSpeedBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCSpeedBar.swift; sourceTree = "<group>"; };
+		8473C8831CA1C298005F72E7 /* DCGameScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCGameScoreController.swift; sourceTree = "<group>"; };
+		8473C8851CA1CCFA005F72E7 /* DCGameScoreControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCGameScoreControllerDelegate.swift; sourceTree = "<group>"; };
+		8473C8871CA31717005F72E7 /* DCSoundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCSoundController.swift; sourceTree = "<group>"; };
+		8481C7461C93D3FB00E4CE24 /* DemonsCave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemonsCave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8481C7521C93D3FB00E4CE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8481C7541C93D3FB00E4CE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8481C7571C93D3FB00E4CE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8481C7591C93D3FB00E4CE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8481C7431C93D3FB00E4CE24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4666B349D1A2211205F0893 /* Pods_DemonsCave.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29A06F3C6139B1102D617E51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CDB939F9912497460D63484 /* Pods-DemonsCave.debug.xcconfig */,
+				2FFD2651F2EAD0A86483F404 /* Pods-DemonsCave.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		842B112F1C94477000897202 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				842B11301C94478F00897202 /* DCObject.swift */,
+				842B11321C9447A400897202 /* DCCaveBackground.swift */,
+				842B11341C9447C400897202 /* DCPipe.swift */,
+				842B11361C9447E900897202 /* DCCoin.swift */,
+				842B11381C9447F700897202 /* DCWerj.swift */,
+				842B113A1C9447FF00897202 /* DCEnemy.swift */,
+				8473C8361C9D7743005F72E7 /* DCUtils.swift */,
+				8473C87A1C9EEF42005F72E7 /* DCExplosion.swift */,
+				8473C87C1C9EEF7A005F72E7 /* DCExplosionDelegate.swift */,
+				8473C87E1CA05739005F72E7 /* DCSpeedBarEmpty.swift */,
+				8473C8801CA0678F005F72E7 /* DCSpeedBar.swift */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
+		8473C8381C9DBF66005F72E7 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				8473C83D1C9DBF67005F72E7 /* music */,
+				8473C8391C9DBF67005F72E7 /* font */,
+				8473C8541C9DBF67005F72E7 /* sound */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		8473C8391C9DBF67005F72E7 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				8473C83A1C9DBF67005F72E7 /* ChelseaMarket-Regular.ttf */,
+				8473C83B1C9DBF67005F72E7 /* OFL.txt */,
+				8473C83C1C9DBF67005F72E7 /* ScizzorwreckHalbfett.otf */,
+			);
+			path = font;
+			sourceTree = "<group>";
+		};
+		8473C83D1C9DBF67005F72E7 /* music */ = {
+			isa = PBXGroup;
+			children = (
+				8473C83E1C9DBF67005F72E7 /* bensound-dance.m4a */,
+				8473C8401C9DBF67005F72E7 /* bensound-dubstep.m4a */,
+				8473C8421C9DBF67005F72E7 /* bensound-funkyelement.m4a */,
+				8473C8441C9DBF67005F72E7 /* bensound-moose.m4a */,
+				8473C84C1C9DBF67005F72E7 /* michett-bitch-please.m4a */,
+				8473C84E1C9DBF67005F72E7 /* michett-planes.m4a */,
+				8473C8461C9DBF67005F72E7 /* bensound-popdance.m4a */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
+		8473C8541C9DBF67005F72E7 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				8473C8551C9DBF67005F72E7 /* coin.m4a */,
+				8473C8571C9DBF67005F72E7 /* explosion.m4a */,
+				8473C8591C9DBF67005F72E7 /* speedUp.m4a */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		8473C8821CA1C27C005F72E7 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				8473C8831CA1C298005F72E7 /* DCGameScoreController.swift */,
+				8473C8851CA1CCFA005F72E7 /* DCGameScoreControllerDelegate.swift */,
+				8473C8871CA31717005F72E7 /* DCSoundController.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		8481C73D1C93D3FB00E4CE24 = {
+			isa = PBXGroup;
+			children = (
+				8481C7481C93D3FB00E4CE24 /* DemonsCave */,
+				8481C7471C93D3FB00E4CE24 /* Products */,
+				29A06F3C6139B1102D617E51 /* Pods */,
+				B8806A1891267B8F38F92E4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8481C7471C93D3FB00E4CE24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8481C7461C93D3FB00E4CE24 /* DemonsCave.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8481C7481C93D3FB00E4CE24 /* DemonsCave */ = {
+			isa = PBXGroup;
+			children = (
+				8473C8821CA1C27C005F72E7 /* System */,
+				8473C8381C9DBF66005F72E7 /* data */,
+				842B112F1C94477000897202 /* GameObjects */,
+				842B11291C94340200897202 /* DCScene.swift */,
+				842B11271C942E7D00897202 /* DCSceneDelegate.swift */,
+				842B11211C94088900897202 /* DCFadeImagePresenterLogoScene.swift */,
+				842B112B1C943E5E00897202 /* DCInGameScene.swift */,
+				842B11251C94148300897202 /* DCPlayGameInstructionsScene.swift */,
+				840F5BA91C93FE7E00F3F639 /* DCGameViewController.swift */,
+				842B112D1C9445C300897202 /* DCGameOverScene.swift */,
+				840F5BA71C93FCF400F3F639 /* AppDelegate.swift */,
+				8481C7511C93D3FB00E4CE24 /* Main.storyboard */,
+				8481C7541C93D3FB00E4CE24 /* Assets.xcassets */,
+				840F5BAD1C9405EE00F3F639 /* FullScreen.xcassets */,
+				842B113C1C944A7B00897202 /* InGame.xcassets */,
+				8481C7561C93D3FB00E4CE24 /* LaunchScreen.storyboard */,
+				8481C7591C93D3FB00E4CE24 /* Info.plist */,
+			);
+			path = DemonsCave;
+			sourceTree = "<group>";
+		};
+		B8806A1891267B8F38F92E4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				087FF08B40A00CB3C7D4D6CB /* Pods_DemonsCave.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8481C7451C93D3FB00E4CE24 /* DemonsCave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8481C75C1C93D3FB00E4CE24 /* Build configuration list for PBXNativeTarget "DemonsCave" */;
+			buildPhases = (
+				107453BDF70D4114921B7C9F /* [CP] Check Pods Manifest.lock */,
+				B87C0DFAF3E4D9F5742569D0 /* Check Pods Manifest.lock */,
+				8481C7421C93D3FB00E4CE24 /* Sources */,
+				8481C7431C93D3FB00E4CE24 /* Frameworks */,
+				8481C7441C93D3FB00E4CE24 /* Resources */,
+				043BCD3ADCF40357E913B615 /* Embed Pods Frameworks */,
+				6511106232F814AE38902631 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemonsCave;
+			productName = DemonsCave;
+			productReference = 8481C7461C93D3FB00E4CE24 /* DemonsCave.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8481C73E1C93D3FB00E4CE24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = demensdeum;
+				TargetAttributes = {
+					8481C7451C93D3FB00E4CE24 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8PWK7U7PCX;
+					};
+				};
+			};
+			buildConfigurationList = 8481C7411C93D3FB00E4CE24 /* Build configuration list for PBXProject "DemonsCave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8481C73D1C93D3FB00E4CE24;
+			productRefGroup = 8481C7471C93D3FB00E4CE24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8481C7451C93D3FB00E4CE24 /* DemonsCave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8481C7441C93D3FB00E4CE24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8473C8771C9DBF67005F72E7 /* speedUp.m4a in Resources */,
+				8473C85B1C9DBF67005F72E7 /* OFL.txt in Resources */,
+				8473C85C1C9DBF67005F72E7 /* ScizzorwreckHalbfett.otf in Resources */,
+				8473C8631C9DBF67005F72E7 /* bensound-moose.m4a in Resources */,
+				8473C85D1C9DBF67005F72E7 /* bensound-dance.m4a in Resources */,
+				8473C8651C9DBF67005F72E7 /* bensound-popdance.m4a in Resources */,
+				8481C7581C93D3FB00E4CE24 /* LaunchScreen.storyboard in Resources */,
+				8473C8611C9DBF67005F72E7 /* bensound-funkyelement.m4a in Resources */,
+				8473C86D1C9DBF67005F72E7 /* michett-planes.m4a in Resources */,
+				8473C85A1C9DBF67005F72E7 /* ChelseaMarket-Regular.ttf in Resources */,
+				8473C8751C9DBF67005F72E7 /* explosion.m4a in Resources */,
+				842B113D1C944A7B00897202 /* InGame.xcassets in Resources */,
+				8473C8731C9DBF67005F72E7 /* coin.m4a in Resources */,
+				8473C86B1C9DBF67005F72E7 /* michett-bitch-please.m4a in Resources */,
+				8481C7551C93D3FB00E4CE24 /* Assets.xcassets in Resources */,
+				8473C85F1C9DBF67005F72E7 /* bensound-dubstep.m4a in Resources */,
+				840F5BAE1C9405EE00F3F639 /* FullScreen.xcassets in Resources */,
+				8481C7531C93D3FB00E4CE24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		043BCD3ADCF40357E913B615 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemonsCave/Pods-DemonsCave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		107453BDF70D4114921B7C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemonsCave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6511106232F814AE38902631 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemonsCave/Pods-DemonsCave-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemonsCave/Pods-DemonsCave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B87C0DFAF3E4D9F5742569D0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8481C7421C93D3FB00E4CE24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8473C8811CA0678F005F72E7 /* DCSpeedBar.swift in Sources */,
+				8473C8881CA31717005F72E7 /* DCSoundController.swift in Sources */,
+				842B11281C942E7D00897202 /* DCSceneDelegate.swift in Sources */,
+				842B11331C9447A400897202 /* DCCaveBackground.swift in Sources */,
+				840F5BAA1C93FE7E00F3F639 /* DCGameViewController.swift in Sources */,
+				842B112A1C94340200897202 /* DCScene.swift in Sources */,
+				8473C8841CA1C298005F72E7 /* DCGameScoreController.swift in Sources */,
+				8473C8861CA1CCFA005F72E7 /* DCGameScoreControllerDelegate.swift in Sources */,
+				8473C8371C9D7743005F72E7 /* DCUtils.swift in Sources */,
+				8473C87F1CA05739005F72E7 /* DCSpeedBarEmpty.swift in Sources */,
+				842B112E1C9445C300897202 /* DCGameOverScene.swift in Sources */,
+				842B11221C94088900897202 /* DCFadeImagePresenterLogoScene.swift in Sources */,
+				842B11351C9447C400897202 /* DCPipe.swift in Sources */,
+				842B11371C9447E900897202 /* DCCoin.swift in Sources */,
+				842B112C1C943E5E00897202 /* DCInGameScene.swift in Sources */,
+				842B11391C9447F700897202 /* DCWerj.swift in Sources */,
+				8473C87B1C9EEF42005F72E7 /* DCExplosion.swift in Sources */,
+				8473C87D1C9EEF7A005F72E7 /* DCExplosionDelegate.swift in Sources */,
+				842B11311C94478F00897202 /* DCObject.swift in Sources */,
+				842B113B1C9447FF00897202 /* DCEnemy.swift in Sources */,
+				842B11261C94148300897202 /* DCPlayGameInstructionsScene.swift in Sources */,
+				840F5BA81C93FCF400F3F639 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8481C7511C93D3FB00E4CE24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8481C7521C93D3FB00E4CE24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8481C7561C93D3FB00E4CE24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8481C7571C93D3FB00E4CE24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8481C75A1C93D3FB00E4CE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8481C75B1C93D3FB00E4CE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8481C75D1C93D3FB00E4CE24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDB939F9912497460D63484 /* Pods-DemonsCave.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ilya Prokhorov (8PWK7U7PCX)";
+				INFOPLIST_FILE = DemonsCave/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demensdeum.DemonsCave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8481C75E1C93D3FB00E4CE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FFD2651F2EAD0A86483F404 /* Pods-DemonsCave.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ilya Prokhorov (8PWK7U7PCX)";
+				INFOPLIST_FILE = DemonsCave/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demensdeum.DemonsCave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8481C7411C93D3FB00E4CE24 /* Build configuration list for PBXProject "DemonsCave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8481C75A1C93D3FB00E4CE24 /* Debug */,
+				8481C75B1C93D3FB00E4CE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8481C75C1C93D3FB00E4CE24 /* Build configuration list for PBXNativeTarget "DemonsCave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8481C75D1C93D3FB00E4CE24 /* Debug */,
+				8481C75E1C93D3FB00E4CE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8481C73E1C93D3FB00E4CE24 /* Project object */;
+}
