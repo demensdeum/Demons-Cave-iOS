@@ -11,3 +11,4 @@ Graphic Resources, Music Resources, Sounds - belongs to authors
 Build:
 pod install
 open DemonsCave.xcworkspace
+build in XCode
